@@ -1,0 +1,14 @@
+.login:hover, .signup:hover{
+    background: linear-gradient(#8fd3f4, #84fab0);
+}
+.login, .signup{
+    width:100px;
+}
+/* .try{
+    display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+}
+.try li{
+    flex-basis: 50%;
+} */
