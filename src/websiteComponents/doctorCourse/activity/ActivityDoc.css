@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+.ActivityHead{
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #51d3d0;
+}
+.activityCard{
+    border-radius: 20px;
+    width:300px;
+}

@@ -1,17 +1,16 @@
 import React from "react";
 import "../heroSectionOne/Carousel.css";
 import { Parallax } from "react-parallax";
-import { Background } from "react-parallax";
-import Black from "./Image/black.png";
 import Astro from "./Image/astropng.png";
-import Univ from "./Image/universe.jpg";
 import Engineer from "./Image/engineergirl1.png";
 import Neon2 from "./Image/neonbg5.jpg";
 import Neon from "./Image/neonbg4.jpg";
 import Doctor from "./Image/doctorgirl.png";
 import Shoot from "./Image/shootingstar.gif";
 import { Footer } from "../../footer/Footer";
-
+import { Login } from "../../login/Login";
+import { AfterLogin } from "../../afterLoginPage/AfterLogin";
+import { Link } from "react-router-dom";
 
 export const Carousel = () => {
   return (
@@ -39,15 +38,14 @@ export const Carousel = () => {
                   professionals
                 </p>
                 <div>
-                  <button className="btn tagBtn rounded-pill">Explore</button>
+                  <Link to="/After">
+                    <button className="btn tagBtn rounded-pill">Explore</button>
+                  </Link>
                 </div>
               </div>
             </div>
             {/* content1 end */}
-            {/* content2 */}
-            {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/-UmPt6LgKRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
-
-            {/* content2 end */}
+            {/* content2 */} {/* content2 end */}
           </div>
         </Parallax>
         <Parallax strength={300} bgImage={Neon}>
@@ -89,7 +87,7 @@ export const Carousel = () => {
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
                     ></iframe>
-                    <div className="mt-5 fs-4 fw-bolder">
+                    <div className="mt-5 fs-3 fw-bolder">
                       Doctor Motivational Video
                     </div>
                     {/* <button type="button" className="mt-3 rounded-pill btn">Watch now</button> */}
@@ -97,8 +95,8 @@ export const Carousel = () => {
                       Watch now
                     </button> */}
                   </div>
-                  <div class="card-body">
-                    <h5 class="card-title fw-bolder">Doctors</h5>
+                  <div class="card-body p-4">
+                    <h5 class="card-title fw-bolder fs-4">Doctors</h5>
                     <p class="card-text">
                       Not all the heroes wear cape, some wear apron too. Doctors
                       are just god in disguise, ready to help us by risking
@@ -128,19 +126,19 @@ export const Carousel = () => {
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
                     ></iframe>
-                    <div className="mt-5 fs-4 fw-bolder">
+                    <div className="mt-5 fs-3 fw-bolder">
                       Engineer Motivational Video
                     </div>
                     {/* <button type="button" class="btn watch mt-3 rounded-pill">
                       Watch now
                     </button> */}
                   </div>
-                  <div class="card-body">
-                    <h5 class="card-title fw-bolder">Engineers</h5>
+                  <div className="card-body p-4">
+                    <h5 class="card-title fw-bolder fs-4">Engineers</h5>
                     <p class="card-text">
-                      There is nothing that can't be made possible.Engineers
-                      make impossible things turn into reality, it's them who
-                      give life to thousands of dreams and thoughts.
+                      There is nothing that can't be made possible.They make
+                      impossible things turn into reality, it's them who give
+                      life to thousands of dreams and thoughts.
                     </p>
                     <a href="#" class="btn btn-primary rounded-pill cardbtn">
                       Enroll now
@@ -190,7 +188,7 @@ export const Carousel = () => {
         <Parallax strength={600} bgImage={Neon}>
           <div class="container text-center content1">
             <div class="row row-cols-2 mt-5">
-            <div class="col mt-3">
+              <div class="col mt-3">
                 <img src={Engineer} height="470px" width="400px" />
               </div>
               <div className="col mt-5 doc pt-5 about">
@@ -209,7 +207,6 @@ export const Carousel = () => {
                   interface between science and society.
                 </div>
               </div>
-              
 
               {/* <div class="container text-center content1">
   <div class="row row-cols-2 mt-5">
@@ -234,10 +231,11 @@ export const Carousel = () => {
           </div>
         </Parallax>
         <Parallax disabled>
-<Footer/>
-       
-      {/* <div>hey HTML color codes are hexadecimal triplets representing the colors red, green, and blue (#RRGGBB). For example, in the color red, the color code is #FF0000, which is '255' red, '0' green, and '0' blue. There are 16,777,216 possible HTML color codes, and all are visible on a 24-bit display.HTML color codes are hexadecimal triplets representing the colors red, green, and blue (#RRGGBB). For example, in the color red, the color code is #FF0000, which is '255' red, '0' green, and '0' blue. There are 16,777,216 possible HTML color codes, and all are visible on a 24-bit display.HTML color codes are hexadecimal triplets representing the colors red, green, and blue (#RRGGBB). For example, in the color red, the color code is #FF0000, which is '255' red, '0' green, and '0' blue. There are 16,777,216 possible HTML color codes, and all are visible on a 24-bit display.HTML color codes are hexadecimal triplets representing the colors red, green, and blue (#RRGGBB). For example, in the color red, the color code is #FF0000, which is '255' red, '0' green, and '0' blue. There are 16,777,216 possible HTML color codes, and all are visible on a 24-bit display.HTML color codes are hexadecimal triplets representing the colors red, green, and blue (#RRGGBB). For example, in the color red, the color code is #FF0000, which is '255' red, '0' green, and '0' blue. There are 16,777,216 possible HTML color codes, and all are visible on a 24-bit display.HTML color codes are hexadecimal triplets representing the colors red, green, and blue (#RRGGBB). For example, in the color red, the color code is #FF0000, which is '255' red, '0' green, and '0' blue. There are 16,777,216 possible HTML color codes, and all are visible on a 24-bit display.</div> */}
-      </Parallax>
+          <Footer />
+          {/* <Login /> */}
+          {/* <AfterLogin/> */}
+          {/* <div>hey HTML color codes are hexadecimal triplets representing the colors red, green, and blue (#RRGGBB). For example, in the color red, the color code is #FF0000, which is '255' red, '0' green, and '0' blue. There are 16,777,216 possible HTML color codes, and all are visible on a 24-bit display.HTML color codes are hexadecimal triplets representing the colors red, green, and blue (#RRGGBB). For example, in the color red, the color code is #FF0000, which is '255' red, '0' green, and '0' blue. There are 16,777,216 possible HTML color codes, and all are visible on a 24-bit display.HTML color codes are hexadecimal triplets representing the colors red, green, and blue (#RRGGBB). For example, in the color red, the color code is #FF0000, which is '255' red, '0' green, and '0' blue. There are 16,777,216 possible HTML color codes, and all are visible on a 24-bit display.HTML color codes are hexadecimal triplets representing the colors red, green, and blue (#RRGGBB). For example, in the color red, the color code is #FF0000, which is '255' red, '0' green, and '0' blue. There are 16,777,216 possible HTML color codes, and all are visible on a 24-bit display.HTML color codes are hexadecimal triplets representing the colors red, green, and blue (#RRGGBB). For example, in the color red, the color code is #FF0000, which is '255' red, '0' green, and '0' blue. There are 16,777,216 possible HTML color codes, and all are visible on a 24-bit display.HTML color codes are hexadecimal triplets representing the colors red, green, and blue (#RRGGBB). For example, in the color red, the color code is #FF0000, which is '255' red, '0' green, and '0' blue. There are 16,777,216 possible HTML color codes, and all are visible on a 24-bit display.</div> */}
+        </Parallax>
       </div>
     </>
   );

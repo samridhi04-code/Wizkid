@@ -1,0 +1,31 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+.try{
+    background-image: url("../heroSection/heroSectionOne/Image/afterloginbg2.jpg");
+    background-position: center;
+    background-size: cover;
+    color:white;
+}
+.welcome{
+    background: -webkit-linear-gradient(45deg,#d7830c 20%, #e407d1 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    color: linear-gradient(#1d16e7 0%, #cd20e4 100%);
+    font-size: 55px;
+    padding: 10px 0;
+    /* width: 50%; 
+}
+.formbg{
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 18px;
+}
+.continue{
+    width:150px;
+    height: 50px;
+} */
+
+.formm{
+    overflow-y: hidden;
+}

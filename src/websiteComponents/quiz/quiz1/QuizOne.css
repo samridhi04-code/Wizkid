@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+.quizBg{
+    background: linear-gradient(45deg,#0a052f 50%, #4497e0 100%);
+    overflow-y: hidden;
+    font-family: "Poppins", sans-serif;
+    color:white;
+    height: 100vh;
+}
+.quizBox{
+    border-radius: 20px;
+    margin-top: 150px;
+    
+}
+.quizSubmit{
+    height:50px;
+}
+.sizeBtn{
+    font-size: 5px;
+}
+.Quiz1pic{
+    margin-top: 120px;
+}

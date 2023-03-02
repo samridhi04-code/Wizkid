@@ -1,13 +1,17 @@
 import React from "react";
 import "../navigationbar/Navigation.css";
 import Logo from "../heroSection/heroSectionOne/Image/Logo_edited.png";
+import { Login } from "../login/Login";
+import { Link } from "react-router-dom";
+// import {useNavigate} from"react-router-dom";
 
 export const Navigation = () => {
+  // const navigate =useNavigate();
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary bg-dark text-white sticky-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand ms-4" href="#">
             <img src={Logo} alt="WizKid" width="30" height="24" />
           </a>
           <button
@@ -27,13 +31,13 @@ export const Navigation = () => {
                 <a
                   className="nav-link active text-white"
                   aria-current="page"
-                  href="#"
+                  href="/"
                 >
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <a className="nav-link text-white" href="/course">
                   Courses
                 </a>
               </li>
@@ -49,11 +53,13 @@ export const Navigation = () => {
           </ul> */}
               {/* </li> */}
               <li className="nav-item">
-                <a className="nav-link active text-white">Pricing</a>
+                <a className="nav-link active text-white" href="/pricing">
+                  Pricing
+                </a>
               </li>
             </ul>
 
-            <form className="d-flex" role="search">
+            <div className="d-flex">
               {/* <input
                 className="form-control me-2"
                 type="search"
@@ -61,19 +67,18 @@ export const Navigation = () => {
                 aria-label="Search"
               /> */}
               {/* <div className="justify-content-center">WizKid</div> */}
+              {/* <Link to="/Login"> */}
               <button
                 className="btn btn-outline-light me-3 rounded-pill login"
-                type="submit"
+                // onClick={()=>{console.log("fuck u")}}
               >
                 Login
               </button>
-              <button
-                className="btn btn-outline-light rounded-pill signup"
-                type="submit"
-              >
+              {/* </Link> */}
+              <button className="btn btn-outline-light rounded-pill signup me-4">
                 Sign up
               </button>
-            </form>
+            </div>
           </div>
         </div>
       </nav>

@@ -2,33 +2,34 @@
 // import './App.css';
 import { Carousel } from "./websiteComponents/heroSection/heroSectionOne/Carousel";
 import { Navigation } from "./websiteComponents/navigationbar/Navigation";
-import { About } from "./websiteComponents/heroSection/aboutUs/About";
-import { Test} from "./websiteComponents/heroSection/test/Test";
+import { Coursesmain } from "./websiteComponents/courses/coursesMainPage/Coursesmain";
+// import { About } from "./websiteComponents/heroSection/aboutUs/About";
+import {StudentProfile} from "./websiteComponents/studentProfile/StudentProfile"
+// import { Coursesmain } from "./websiteComponents/heroSection/courses/coursesMainPage/Coursesmain";
+import { AfterLogin } from "./websiteComponents/afterLoginPage/AfterLogin";
+import {DoctorCourse} from "./websiteComponents/doctorCourse/DoctorCourse";
+import { Login } from "./websiteComponents/login/Login";
+import { QuizOne } from "./websiteComponents/quiz/quiz1/QuizOne";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { StrictMode } from "react";
 
 function App() {
   return (
     <>
       <Navigation />
-      {/* <Test/> */}
-      <Carousel />
-      {/* <About /> */}
+      {/* <StudentProfile/> */}
+      {/* <Carousel /> */}
+      <BrowserRouter>
+        <Routes>
+        <Route exact path="/" element={<Carousel />} />
+        <Route exact path="/Login" element={<Login/>} />
+          <Route exact path="/course" element={<Coursesmain />} />
+          <Route exact path="/after" element={<AfterLogin />} />
+          <Route exact path="/pricing" element={<DoctorCourse />} />
+          <Route exact path="/quiz1" element={<QuizOne/>} />
+        </Routes>
+      </BrowserRouter>
     </>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 
