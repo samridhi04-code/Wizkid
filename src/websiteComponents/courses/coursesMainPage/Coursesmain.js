@@ -42,6 +42,15 @@ export const Coursesmain = () => {
                 <a href="#" class="btn btn-primary rounded-pill">
                   Coming Soon
                 </a>
+                
+              </div>
+              <div className="d-flex justify-content-around mb-3">
+              <button className="like">
+                <i className="fa fa-thumbs-up fs-3 text-secondary"></i>
+              </button>
+              <button className="like">
+                <i className="fa fa-thumbs-down fs-3 text-secondary"></i>
+              </button>
               </div>
             </div>
           </div>
@@ -65,6 +74,14 @@ export const Coursesmain = () => {
                   Coming Soon
                 </a>
               </div>
+              <div className="d-flex justify-content-around mb-3">
+              <button className="like">
+                <i className="fa fa-thumbs-up fs-3 text-secondary"></i>
+              </button>
+              <button className="like">
+                <i className="fa fa-thumbs-down fs-3 text-secondary"></i>
+              </button>
+              </div>
             </div>
           </div>
           <div className="col-4">
@@ -82,6 +99,14 @@ export const Coursesmain = () => {
                 <a href="#" class="btn btn-primary rounded-pill">
                   Coming Soon
                 </a>
+              </div>
+              <div className="d-flex justify-content-around mb-3">
+              <button className="like">
+                <i className="fa fa-thumbs-up fs-3 text-secondary"></i>
+              </button>
+              <button className="like">
+                <i className="fa fa-thumbs-down fs-3 text-secondary"></i>
+              </button>
               </div>
             </div>
           </div>

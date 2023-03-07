@@ -7,6 +7,7 @@ import { Coursesmain } from "./websiteComponents/courses/coursesMainPage/Courses
 import {StudentProfile} from "./websiteComponents/studentProfile/StudentProfile"
 // import { Coursesmain } from "./websiteComponents/heroSection/courses/coursesMainPage/Coursesmain";
 import { AfterLogin } from "./websiteComponents/afterLoginPage/AfterLogin";
+import { MainPage } from "./websiteComponents/afterLoginForm/MainPage";
 import {DoctorCourse} from "./websiteComponents/doctorCourse/DoctorCourse";
 import { Login } from "./websiteComponents/login/Login";
 import { QuizOne } from "./websiteComponents/quiz/quiz1/QuizOne";
@@ -24,7 +25,7 @@ function App() {
         <Route exact path="/" element={<Carousel />} />
         <Route exact path="/Login" element={<Login/>} />
           <Route exact path="/course" element={<Coursesmain />} />
-          <Route exact path="/after" element={<AfterLogin />} />
+          <Route exact path="/after" element={<MainPage />} />
           <Route exact path="/pricing" element={<DoctorCourse />} />
           <Route exact path="/quiz1" element={<QuizOne/>} />
         </Routes>
