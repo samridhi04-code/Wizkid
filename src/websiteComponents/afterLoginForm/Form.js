@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
       "& > *": {
         margin: "8rem auto 5rem",
-        maxWidth: "60%"
+        maxWidth: "60%",
       }
     }
   }));
@@ -24,7 +24,8 @@ export const Form = () => {
         animate={{ y: 0 }}
         transition={{ stiffness: 150 }}
       >
-        <TextField id="full-name" fullWidth label="Full Name" />
+        <label>Please Enter Your Name</label>
+        <TextField id="full-name" required={true} fullWidth label="Full Name"/>
       </motion.div>
     </form>
     

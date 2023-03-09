@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 .doctorcrs{
     /* background: linear-gradient(45deg,#0a052f 50%, #4497e0 100%); */
+    background-color: #0c1230;
     overflow-y: hidden;
     font-family: "Poppins", sans-serif;
     /* color:white; */
@@ -44,6 +45,7 @@ font-weight: 700;
 */
 .leftText{
     margin-top: 140px;
+    color: yellow;
 }
 
 .helloText{
@@ -63,16 +65,18 @@ font-weight: 700;
     border-radius: 30px;
 }
 .steps{
-    background-color: #52A7C1; 
-   color: #002e63; 
+    /* background-color: #52A7C1;  */
+    background-color: #191e3c;
+   color: #824de5; 
    font-family: "Poppins", sans-serif;
    border-radius: 5px;
+   /* width:1200px; */
 }
 .numbering{
     font-size: 70px;
-    background-color: #002e63;
+    background-color: yellow;
     /* border-radius: 100%; */
-    color: white;
+    color: black;
     height: 100px;
     width:100px;
 }

@@ -3,7 +3,9 @@ import React from 'react';
 export const Confirm = () => {
   return (
     <>
-    <h1>Congratulations you've done it </h1>;
+    <h1>Thank you for filling out this form </h1>
+    <h2>Let us take you to your course now </h2>
+    ;
     </>
   )
 }

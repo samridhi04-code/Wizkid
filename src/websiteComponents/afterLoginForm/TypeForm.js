@@ -18,38 +18,37 @@ const useStyles = makeStyles((theme) => ({
     }
   }));
 
-export const TypeForm = () => {
-    const classes = useStyles();
-    this.props.children = [...this.props.children, <Confirm />];
-    const [fields, setFields] = useState(0);
-    const nextField = () => {
-      if (fields < this.props.children.length) setFields((prev) => prev + 1);
-    };
-    const prevField = () => {
-      if (fields > 0) setFields((prev) => prev - 1);
-    };
-    const onSubmit = () => {
-        return console.log("hey");
-      };
+export const TypeForm = ({ children, onSubmit }) => {
+  const classes = useStyles();
+  children = [...children, <Confirm />];
+  const [fields, setFields] = useState(0);
+  const nextField = () => {
+    if (fields < children.length) setFields((prev) => prev + 1);
+  };
+  const prevField = () => {
+    if (fields > 0) setFields((prev) => prev - 1);
+  };
+
   return (
     <>
     <React.Fragment>
       <form className={classes.box} onSubmit={onSubmit}>
-        {this.props.children[fields]}
+        {children[fields]}
 
         <ButtonGroup
           disableElevation
           size="small"
           variant="contained"
           color="primary"
+          // className="mb-5"
         >
-          {fields < this.props.children.length - 1 && fields > 0 && (
+          {fields < children.length - 1 && fields > 0 && (
             <Button onClick={prevField}>back</Button>
           )}
-          {fields < this.props.children.length - 2 && (
+          {fields < children.length - 2 && (
             <Button onClick={nextField}>Next</Button>
           )}
-          {fields === this.props.children.length - 2 && (
+          {fields === children.length - 2 && (
             <Button onClick={nextField}>Submit</Button>
           )}
         </ButtonGroup>

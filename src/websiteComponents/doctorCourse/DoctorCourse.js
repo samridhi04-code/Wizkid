@@ -45,7 +45,7 @@ export const DoctorCourse = () => {
               width="130px"
             />
             {/* <hr className="text-light" /> */}
-            <div className="m-3 pt-3 fw-bold">15 videos</div>
+            <div className="m-3 pt-3 fw-bold" style={{color:'yellow'}}>15 videos</div>
           </div>
           <div className="text-center h-50">
             <img
@@ -55,14 +55,14 @@ export const DoctorCourse = () => {
               width="150px"
             />
             {/* <hr className="text-light" /> */}
-            <div className="m-3 pt-3 fw-bold">
+            <div className="m-3 pt-3 fw-bold" style={{color:'#ff00ff '}}>
               15 questions and activities
             </div>
           </div>
           <div className="text-center">
-            <img className="mt-3" src={Clock} height="170px" width="180px" />
+            <img className="mt-3" src={Clock} height="170px" width="180px"/>
             {/* <hr className="text-light" /> */}
-            <div className="m-2 fw-bold">
+            <div className="m-2 fw-bold" style={{color:'#dc143c '}}  >
               
               Estimated time : 10 hours
             </div>
@@ -70,24 +70,24 @@ export const DoctorCourse = () => {
         </div>
 
 {/* steps to start */}
-<div className="steps px-4 pt-4 pb-2">
+<div className="steps px-4 pt-4 pb-2 m-4">
   <div className="fs-1 text-center fw-bold">Earn your certificate in these 3 easy steps</div>
   <div className="d-flex justify-content-between p-5">
 <div className="text-center">
   <div className="numbering rounded-circle ms-5 mb-5">1</div>
 <img className="mt-3" src={Watchvid} height="160px" width="160px"/>
-  <div className="mt-4 fs-4 fw-bold">Watch the video</div>
+  <div className="mt-4 fs-3 fw-bold" style={{color:'#824de5'}}>Watch the video</div>
 </div>
 <div className="text-center">
 <div className="numbering rounded-circle ms-5 mb-5">2</div>
 <img className="mt-3" src={Attemptquiz} height="160px" width="160px"/>
-<div className="mt-4 fs-4 fw-bold">Attempt the Quiz</div>
+<div className="mt-4 fs-3 fw-bold" style={{color:'#824de5 '}}>Attempt the Quiz</div>
 </div>
 <div className="text-center">
   {/* <div className="justify-content-center"> */}
 <div className="numbering rounded-circle ms-5 mb-5">3</div>
 <img className="mt-3" src={Doactivity} height="160px" width="160px"/>
-<div className="mt-4 fs-4 fw-bold">  Perform the activities</div>
+<div className="mt-4 fs-3 fw-bold" style={{color:'#824de5 '}}>  Perform the activities</div>
 </div>
   </div>
 </div>
@@ -96,194 +96,105 @@ export const DoctorCourse = () => {
 <NewDesign/>
 
 {/* //course content */}
-        <div>
-          <div className="m-5 text-center helloText">
+          {/* <div className="m-5 text-center helloText">
             <span>Start Learning</span>
-          </div>
-          <div className="d-flex justify-content-between m-5">
-            <div class="card lesson h-50 py-5">
-              {/* <img src={Course2} class="card-img-top" alt="..."/> */}
-              <iframe
-                className="p-3 lesson1Video"
-                // width="100%"
-                // height="50%"
-                src="https://www.youtube.com/embed/H97A3kaSLhQ"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-              <div class="card-body text-dark">
-                <h5 class="card-title fw-bold">Introduction</h5>
-                <p class="card-text">
-                  Let's understand alphabets before making words
-                </p>
-                {/* <div className="d-flex justify-content-between m-4">
-                  <a href="/quiz1" class="btn btn-primary rounded-pill w-50 me-4">
-                    Quiz
-                  </a>
-                  <a href="#" class="btn btn-primary rounded-pill w-50">
-                    Activity
-                  </a>
-                </div> */}
-              </div>
-            </div>
-
-            {/* <div class="card lesson h-50">
-              <img
-                src={Bg}
-                class="card-img-top"
-                alt="..."
-                style={{ borderRadius: "30px" }}
-              />
-              <div class="card-body text-dark">
-                <h5 class="card-title fw-bold">Lesson-1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <div className="d-flex justify-content-between m-4">
-                  <a href="#" class="btn btn-primary rounded-pill w-50 me-4">
-                    Quiz
-                  </a>
-                  <a href="#" class="btn btn-primary rounded-pill w-50">
-                    Activity
-                  </a>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div class="card lesson">
-              <img src={Course2} class="card-img-top" alt="..." />
-              <div class="card-body text-dark">
-                <h5 class="card-title fw-bold">Lesson-2</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <div className="d-flex justify-content-between m-4">
-                  <a href="#" class="btn btn-primary rounded-pill w-50 me-4">
-                    Quiz
-                  </a>
-                  <a href="#" class="btn btn-primary rounded-pill w-50">
-                    Activity
-                  </a>
-                </div>
-              </div>
-            </div> */}
-
-{/* Quiz start */}
-<div class="card quizCard h-50 mt-4" >
-  <img src="https://tse1.mm.bing.net/th?id=OIP.vt_2zqO4GLIKBsiPxFw-MAHaHa&pid=Api&P=0" class="card-img-top h-25" alt="..." style={{ borderRadius: "20px" }}/>
-  <div class="card-body text-dark">
-    <h5 class="card-title fw-bold">Quiz-1</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <div className='text-center'><a href="/quiz1" class="btn btn-primary rounded-pill">Start quiz</a></div>
-  </div>
-</div>
-{/* Quiz end */}
-
-{/* Activity start */}
-
-
-<div class="card activityCard h-50 mt-4" >
-  <img src="https://tse3.mm.bing.net/th?id=OIP.lXIcNFcQ9_-Y4VToGIRywgHaHa&pid=Api&P=0" class="card-img-top h-25" alt="..." style={{ borderRadius: "20px" }}/>
-  <div class="card-body text-dark">
-    <h5 class="card-title fw-bold">Activity-1</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <div className='text-center'><a href="#" class="btn btn-primary rounded-pill">Perform activity</a></div>
-  </div>
-</div>
-
-
-{/* Activity end  */}
-          </div>
-          <hr className="horizontalRule"/>    
-          {/* start of another course section  */}
-          <div className="d-flex justify-content-between m-5">
-          <div class="card lesson h-50 py-5">
-              {/* <img src={Course2} class="card-img-top" alt="..."/> */}
-              <iframe
-                className="p-3 lesson1Video"
-                // width="100%"
-                // height="50%"
-                src="https://www.youtube.com/embed/H97A3kaSLhQ"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-              <div class="card-body text-dark">
-                <h5 class="card-title fw-bold">Introduction</h5>
-                <p class="card-text">
-                  Let's understand alphabets before making words
-                </p>
-              </div>
-            </div>
-            {/* Quiz start */}
-<div class="card quizCard h-50 mt-4" >
-  <img src="https://tse1.mm.bing.net/th?id=OIP.vt_2zqO4GLIKBsiPxFw-MAHaHa&pid=Api&P=0" class="card-img-top h-25" alt="..." style={{ borderRadius: "20px" }}/>
-  <div class="card-body text-dark">
-    <h5 class="card-title fw-bold">Quiz-1</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <div className='text-center'><a href="/quiz1" class="btn btn-primary rounded-pill">Start quiz</a></div>
-  </div>
-</div>
-{/* Quiz end */}
-
-{/* Activity start */}
-
-
-<div class="card activityCard h-50 mt-4" >
-  <img src="https://tse3.mm.bing.net/th?id=OIP.lXIcNFcQ9_-Y4VToGIRywgHaHa&pid=Api&P=0" class="card-img-top h-25" alt="..." style={{ borderRadius: "20px" }}/>
-  <div class="card-body text-dark">
-    <h5 class="card-title fw-bold">Activity-1</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <div className='text-center'><a href="#" class="btn btn-primary rounded-pill">Perform activity</a></div>
-  </div>
-</div>
-
-
-{/* Activity end  */}
-</div>
-        </div>   {/* ----end of main div */}
-
-        {/* <div className="time px-5 pt-4 radius text-center mb-5 d-flex justify-content-between">
-          <div className="mt-4 ms-3 fs-5">This course includes 15 videos. Each video is followed by an assignment or a quiz. Score the maximum points to win exciting rewards.</div>
-          <div className="d-flex justify-content-start">
-            <img src={Clock} height="100px" width="100px" className="me-3"/>
-            <div className="mt-4">10 hours<br/>Estimated</div>
-          </div>
-        </div> */}
-        {/* <div className="text-center video">
-          <iframe
-                      className="video1 m-5 vid"
-                      src="https://www.youtube.com/embed/H97A3kaSLhQ"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                    ></iframe>
-          </div>
-          <div className="mx-auto w-75">
-            <div className="bg1 fs-3 m-2 p-3">Course Content</div>
-            <div className="mt-5">
-          <div className="bg2 p-3 fs-5 m-3">Intoduction</div>
-          <div className="p-3 fs-5 m-3 bg2">Lesson 1</div>
-          <div className="">
-            <div className="p-3 ms-5 my-3 w-75 bg3">Lesson1 video</div>
-            <div className="p-3 ms-5 my-3 w-75 bg3">Quiz-1</div>
-          </div>
-          <div className="bg2 p-3 fs-5 m-3">Lesson 2</div>
-          <div className="bg2 p-3 fs-5 m-3">Lesson 3</div>
-          <div className="bg2 p-3 fs-5 m-3">Lesson 4</div>
-          <div className="bg2 p-3 fs-5 m-3">Lesson 5</div>
-          </div>
           </div> */}
-        <div>
-          {/* <QuizDoc /> */}
-          {/* <Footer/> */}
-        </div>
+          {/* <div className="d-flex justify-content-between m-5"> */}
+            {/* <div class="card lesson h-50 py-5">
+              <iframe
+                className="p-3 lesson1Video"
+                src="https://www.youtube.com/embed/H97A3kaSLhQ"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+              <div class="card-body text-dark">
+                <h5 class="card-title fw-bold">Introduction</h5>
+                <p class="card-text">
+                  Let's understand alphabets before making words
+                </p>
+              </div>
+            </div> */}
+
+            
+{/* Quiz start */}
+{/* <div class="card quizCard h-50 mt-4" >
+  <img src="https://tse1.mm.bing.net/th?id=OIP.vt_2zqO4GLIKBsiPxFw-MAHaHa&pid=Api&P=0" class="card-img-top h-25" alt="..." style={{ borderRadius: "20px" }}/>
+  <div class="card-body text-dark">
+    <h5 class="card-title fw-bold">Quiz-1</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div className='text-center'><a href="/quiz1" class="btn btn-primary rounded-pill">Start quiz</a></div>
+  </div>
+</div> */}
+{/* Quiz end */}
+
+{/* Activity start */}
+
+
+{/* <div class="card activityCard h-50 mt-4" >
+  <img src="https://tse3.mm.bing.net/th?id=OIP.lXIcNFcQ9_-Y4VToGIRywgHaHa&pid=Api&P=0" class="card-img-top h-25" alt="..." style={{ borderRadius: "20px" }}/>
+  <div class="card-body text-dark">
+    <h5 class="card-title fw-bold">Activity-1</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div className='text-center'><a href="#" class="btn btn-primary rounded-pill">Perform activity</a></div>
+  </div>
+</div> */}
+
+
+{/* Activity end  */}
+          {/* </div> */}
+          {/* <hr className="horizontalRule"/>     */}
+          {/* start of another course section  */}
+          {/* <div className="d-flex justify-content-between m-5"> */}
+          {/* <div class="card lesson h-50 py-5">
+              <iframe
+                className="p-3 lesson1Video"
+                src="https://www.youtube.com/embed/H97A3kaSLhQ"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+              <div class="card-body text-dark">
+                <h5 class="card-title fw-bold">Introduction</h5>
+                <p class="card-text">
+                  Let's understand alphabets before making words
+                </p>
+              </div>
+            </div> */}
+            {/* Quiz start */}
+{/* <div class="card quizCard h-50 mt-4" >
+  <img src="https://tse1.mm.bing.net/th?id=OIP.vt_2zqO4GLIKBsiPxFw-MAHaHa&pid=Api&P=0" class="card-img-top h-25" alt="..." style={{ borderRadius: "20px" }}/>
+  <div class="card-body text-dark">
+    <h5 class="card-title fw-bold">Quiz-1</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div className='text-center'><a href="/quiz1" class="btn btn-primary rounded-pill">Start quiz</a></div>
+  </div>
+</div> */}
+{/* Quiz end */}
+
+{/* Activity start */}
+
+{/* 
+<div class="card activityCard h-50 mt-4" >
+  <img src="https://tse3.mm.bing.net/th?id=OIP.lXIcNFcQ9_-Y4VToGIRywgHaHa&pid=Api&P=0" class="card-img-top h-25" alt="..." style={{ borderRadius: "20px" }}/>
+  <div class="card-body text-dark">
+    <h5 class="card-title fw-bold">Activity-1</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div className='text-center'><a href="#" class="btn btn-primary rounded-pill">Perform activity</a></div>
+  </div>
+</div> */}
+
+
+{/* Activity end  */}
+
+{/* course div end  */}
+        {/* </div> */}
+           {/* ----end of main div */}
+        {/* <div>
+          <QuizDoc /> <Footer/>
+        </div> */}
       </div>
     </>
   );

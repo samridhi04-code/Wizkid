@@ -24,7 +24,8 @@ export const Form2 = () => {
         animate={{ y: 0 }}
         transition={{ stiffness: 150 }}
       >
-        <TextField id="email-id" fullWidth label="Email id" />
+        <label>Please Enter Your Email Id</label>
+        <TextField id="email-id" required={true} fullWidth label="Email id" />
       </motion.div>
     </form>
     </>

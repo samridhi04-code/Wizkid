@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const Form3 = () => {
+export const Form5 = () => {
   const classes = useStyles();
   return (
     <>
@@ -23,8 +23,8 @@ export const Form3 = () => {
           animate={{ y: 0 }}
           transition={{ stiffness: 150 }}
         >
-          <label>Please Enter Your Contact Number</label>
-          <TextField id="contact" required={true} fullWidth label="Contact" />
+            <label>You Are In which Standard Currently ? </label>
+          <TextField id="class" required={true} fullWidth label="Class" />
         </motion.div>
       </form>
     </>
