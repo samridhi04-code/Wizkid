@@ -70,16 +70,6 @@ export const QuizOne = () => {
                 </tr>
               </table>
             </div>
-            {/* <div className='my-5'>
-    <div className='d-flex justify-content-around fs-3'>
-        <div>a. diagnosis</div>
-        <div>b. disease</div>
-    </div>
-    <div className='d-flex justify-content-around fs-3'>
-        <div>c. book</div>
-        <div>d. none of these</div>
-    </div>
-    </div> */}
             <div className="text-center">
               <button
                 type="submit"

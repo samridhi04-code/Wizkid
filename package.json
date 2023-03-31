@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.4",
+    "@mui/material": "^5.11.15",
     "@quillforms/blocks": "^3.0.4",
     "@quillforms/react-renderer-utils": "^4.1.0",
     "@quillforms/renderer-core": "^4.1.0",

@@ -17,7 +17,7 @@ export const MainPage = () => {
     <>
       <div className="app">
         {/* <img src={AstroNaut} width="200px" height="200px"/> */}
-        <h1 className="fw-bold mt-5" style={{color:'yellow '}}>Welcome to Wizkid </h1>
+        <h1 className="fw-bold mt-5" style={{color:'magenta '}}>Welcome to Wizkid </h1>
         <h2 className="mt-3" style={{color:'#824de5 '}}>Please help us know you you better before we take you to your course</h2>
         <TypeForm onSubmit={submit}>
           <Form />

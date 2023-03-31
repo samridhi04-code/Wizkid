@@ -3,7 +3,8 @@
     height:890px;
     /* gap:1rem; */
     /* border-radius: 30px; */
-    box-shadow:  1px 2px 3px 1px #a9a9a9 ;
+    /* box-shadow:  1px 2px 3px 1px #a9a9a9 ; */
+    box-shadow:  5px 5px 6px #22315b;
 }
 .gradientBg{
 background: linear-gradient(90deg, #087EE1 0%, #05E8BA 100%);
@@ -16,16 +17,21 @@ height:430px;
     box-shadow:  3px 3px 5px #696969 ;
 }
 .rightDiv{
-    box-shadow:  3px 3px 5px #a9a9a9 ;
+    box-shadow:  8px 8px 6px #22315b;
     height: 890px;
 }
 .twoBoxes{
     border-radius: 10px;
-    box-shadow:  1px 2px 3px 1px #a9a9a9 ;
+    box-shadow:  2px 2px 3px 1px #a9a9a9 ;
 }
 .quizNdact{
 background-color: #087EE1;
+box-shadow:  3px 3px 6px #22315b;
 }
-.CourseFirstText{
+/* .CourseFirstText{
     font-size: 70px;
+    text-shadow: 3px 3px 6px #838793 ;
+} */
+.entireLessonBox{
+    margin-bottom: 250px;
 }

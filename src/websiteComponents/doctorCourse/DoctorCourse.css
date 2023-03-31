@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 .doctorcrs{
     /* background: linear-gradient(45deg,#0a052f 50%, #4497e0 100%); */
-    background-color: #0c1230;
+    background-color: #17171d;
     overflow-y: hidden;
     font-family: "Poppins", sans-serif;
     /* color:white; */
@@ -45,7 +45,8 @@ font-weight: 700;
 */
 .leftText{
     margin-top: 140px;
-    color: yellow;
+    /* color: yellow; */
+    color: white;
 }
 
 .helloText{
@@ -67,7 +68,8 @@ font-weight: 700;
 .steps{
     /* background-color: #52A7C1;  */
     background-color: #191e3c;
-   color: #824de5; 
+   /* color: #824de5;  */
+   color: white;
    font-family: "Poppins", sans-serif;
    border-radius: 5px;
    /* width:1200px; */
@@ -87,4 +89,8 @@ font-weight: 700;
 }
 .horizontalRule{
     border-top: 3px solid;
+}
+.CourseFirstText{
+    font-size: 70px;
+    text-shadow: 3px 3px 6px #838793 ;
 }

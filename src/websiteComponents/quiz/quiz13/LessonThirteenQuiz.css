@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+.app {
+    font-family: sans-serif;
+    text-align: center;
+    /* background-color: #191e3c; */
+    /* color: white; */
+    height:100vh;
+    padding-top: 0px;
+    overflow-y: hidden;
+    font-family: "Poppins", sans-serif !important;
+  }
+  .lessonName{
+    font-size: 50px;
+    font-weight: 600;
+  }
+  /* #quizThirteenPage{
+    color: aliceblue;
+    
+   
+      background: linear-gradient(45deg, #41185E, #000000, #4D2E53);
+      background-size: 600% 600%;
+      animation: GradientBackground 10s ease infinite;
+    }
+    @keyframes GradientBackground {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    };
+  
+ 
+   */
+   #quizThirteenPage{
+    color: aliceblue;
+    background: linear-gradient(45deg, #22D45A, #2247D4);
+    background-size: 400% 400%;
+    animation: GradientBackground 10s ease infinite;
+  }
+
+  @keyframes GradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  };
+  /* .label-info{
+    background-color: blue;
+  } */
