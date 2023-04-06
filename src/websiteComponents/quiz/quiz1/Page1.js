@@ -23,18 +23,18 @@ const useStyles = makeStyles((theme) => ({
 export const Page1 = () => {
   const classes = useStyles();
 
-  const [flavors, setFlavors] = React.useState({
-    chocolate: true,
-    vanilla: false,
-    strawberry: false,
-    orange: false,
-  });
+  // const [flavors, setFlavors] = React.useState({
+  //   chocolate: true,
+  //   vanilla: false,
+  //   strawberry: false,
+  //   orange: false,
+  // });
 
-  const { chocolate, vanilla, strawberry, orange } = flavors;
+  // const { chocolate, vanilla, strawberry, orange } = flavors;
 
-  const handleFlavorChange = (event) => {
-    setFlavors({ ...flavors, [event.target.name]: event.target.checked });
-  };
+  // const handleFlavorChange = (event) => {
+  //   setFlavors({ ...flavors, [event.target.name]: event.target.checked });
+  // };
 
   return (
     <>
@@ -47,8 +47,8 @@ export const Page1 = () => {
         >
           {/* <div className="mb-5 lessonName">Life of a Doctor</div> */}
           <div className="fs-2 mb-5 mt-5">
-            What does the daily work of a Doctor involve ?{" "}
-            <br/><span className="fs-5"> (Select multiple) </span>
+            What does the daily work of a Doctor involve ? <br />
+            <span className="fs-5"> (Select multiple) </span>
           </div>
           <FormControl component="fieldset">
             <FormGroup>
@@ -68,10 +68,8 @@ export const Page1 = () => {
                     </Typography>
                   }
                 /> */}
-                <div>
-                  <h3>
-                  Take Medical History
-                    </h3>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Ward Rounds</p>
                 </div>
                 {/* <FormControlLabel
                   className="p-4"
@@ -88,10 +86,18 @@ export const Page1 = () => {
                     </Typography>
                   }
                 /> */}
-                
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3 ">
+                  <p style={{width:'8rem'}}>Take Medical History</p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3 ">
+                  <p style={{width:'8rem'}} >Clinical examination</p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Make Treatment Plan</p>
+                </div>
               </div>
               <div className="d-flex justify-content-around">
-                <FormControlLabel
+                {/* <FormControlLabel
                   className="p-4 me-5"
                   control={
                     <Checkbox
@@ -117,9 +123,21 @@ export const Page1 = () => {
                     />
                   }
                   label={
-                    <Typography className="fs-3">Perform surgeries </Typography>
+                    <Typography className="fs-3"></Typography>
                   }
-                />
+                /> */}
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Save lives</p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Document notes</p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Organise medical tests</p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Perform surgeries</p>
+                </div>
               </div>
             </FormGroup>
           </FormControl>

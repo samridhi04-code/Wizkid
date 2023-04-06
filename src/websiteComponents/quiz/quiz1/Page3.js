@@ -12,6 +12,12 @@ import Stetho from '../../heroSection/heroSectionOne/Image/stethoscope.gif';
 import Hammer from '../../heroSection/heroSectionOne/Image/hammer.gif';
 import Magnify from '../../heroSection/heroSectionOne/Image/magnifying-glass.gif';
 import Torch from '../../heroSection/heroSectionOne/Image/torch.png';
+import Knee from '../../heroSection/heroSectionOne/Image/bone.png';
+import Digger from '../../heroSection/heroSectionOne/Image/shovel.png';
+import EyeGlass from '../../heroSection/heroSectionOne/Image/eye-glass.png';
+import HeadLight from '../../heroSection/heroSectionOne/Image/head-light.png';
+import Saw from '../../heroSection/heroSectionOne/Image/hand-saw.png';
+import Vaccum from '../../heroSection/heroSectionOne/Image/vacuum.png';
 
 import "../quiz1/LessonOneQuiz.css";
 
@@ -50,14 +56,16 @@ export const Page3 = () => {
           transition={{ stiffness: 150 }}
         >
           {/* <div className="mb-5 lessonName">Checking the Pulse</div> */}
-          <div className="fs-2 mb-5 mt-5">
-          Select the tools that a doctor uses during his work{" "}
-          <br/>  <span className="fs-5"> (Select multiple) </span>
+          <div className="mb-5 mt-5">
+          {/* <p className="">Lesson</p> */}
+          <p className="fs-2 ">Select the tools that a doctor uses during his work{" "}
+          <br/>  <span className="fs-5"> (Select multiple) </span></p>
+          {/* <p></p> */}
           </div>
           <FormControl component="fieldset">
             <FormGroup>
               <div className="d-flex justify-content-around">
-                <FormControlLabel
+                {/* <FormControlLabel
                   className="p-4 me-5"
                   control={
                     <Checkbox
@@ -78,10 +86,25 @@ export const Page3 = () => {
                     />
                   }
                   label={<img src={Hammer} height="150px" width="150px"/>}
-                />
+                /> */}
+                <div className="mt-5 mx-4 rounded-3 p-2 bg-light">
+                  <img src={Stetho} height="100px" width="100px"/>
+                </div>
+                <div className="mt-5 mx-4 rounded-3 p-2 bg-light">
+                  <img src={Knee} height="100px" width="100px"/>
+                </div>
+                <div className="mt-5 mx-4 rounded-3 p-2 bg-light">
+                  <img src={Saw} height="100px" width="100px"/>
+                </div>
+                <div className="mt-5 mx-4 rounded-3 p-2 bg-light">
+                  <img src={Hammer} height="100px" width="100px"/>
+                </div>
+                <div className="mt-5 mx-4 rounded-3 p-2 bg-light">
+                  <img src={HeadLight} height="100px" width="100px"/>
+                </div>
               </div>
               <div className="d-flex justify-content-around">
-                <FormControlLabel
+                {/* <FormControlLabel
                   className="p-4 me-5"
                   control={
                     <Checkbox
@@ -102,11 +125,31 @@ export const Page3 = () => {
                     />
                   }
                   label={<img src={Torch} height="150px" width="150px"/>}
-                />
+                /> */}
+                 <div className="mt-5 mx-4 rounded-3 p-2 bg-light">
+                  <img src={EyeGlass} height="100px" width="100px"/>
+                </div>
+                <div className="mt-5 mx-4 rounded-3 p-2 bg-light">
+                  <img src={Torch} height="100px" width="100px"/>
+                </div>
+                <div className="mt-5 mx-4 rounded-3 p-2 bg-light">
+                  <img src={Digger} height="100px" width="100px"/>
+                </div>
+                <div className="mt-5 mx-4 rounded-3 p-2 bg-light">
+                  <img src={Magnify} height="100px" width="100px"/>
+                </div>
+                <div className="mt-5 ms-4 bg-light rounded-3 p-2">
+                  <img src={Vaccum} height="100px" width="100px"/>
+                </div>
               </div>
+              {/* <div className="text-light d-flex">
+                <p className="">Lesson</p>
+                </div> */}
             </FormGroup>
+            
           </FormControl>
         </motion.div>
+        
       </form>
     </>
   );

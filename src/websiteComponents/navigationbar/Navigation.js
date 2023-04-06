@@ -70,7 +70,7 @@ export const Navigation = () => {
               {/* <Link to="/Login"> */}
               <button
                 className="btn btn-outline-light me-3 rounded-pill login"
-                // onClick={()=>{console.log("fuck u")}}
+                
               >
                 Login
               </button>

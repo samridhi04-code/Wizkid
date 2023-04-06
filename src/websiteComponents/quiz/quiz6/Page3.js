@@ -23,18 +23,18 @@ const useStyles = makeStyles((theme) => ({
 export const Page3 = () => {
   const classes = useStyles();
 
-  const [flavors, setFlavors] = React.useState({
-    chocolate: true,
-    vanilla: false,
-    strawberry: false,
-    orange: false,
-  });
+  // const [flavors, setFlavors] = React.useState({
+  //   chocolate: true,
+  //   vanilla: false,
+  //   strawberry: false,
+  //   orange: false,
+  // });
 
-  const { chocolate, vanilla, strawberry, orange } = flavors;
+  // const { chocolate, vanilla, strawberry, orange } = flavors;
 
-  const handleFlavorChange = (event) => {
-    setFlavors({ ...flavors, [event.target.name]: event.target.checked });
-  };
+  // const handleFlavorChange = (event) => {
+  //   setFlavors({ ...flavors, [event.target.name]: event.target.checked });
+  // };
 
   return (
     <>
@@ -47,13 +47,13 @@ export const Page3 = () => {
         >
           {/* <div className="mb-5 lessonName">Life of a Doctor</div> */}
           <div className="fs-2 mb-5">
-          Select the factors they increase the risk for Heart Attack {" "}
+            Select the factors they increase the risk for Heart Attack{" "}
             {/* <span className="fs-5"> (Select multiple) </span> */}
           </div>
           <FormControl component="fieldset">
             <FormGroup>
               <div className="d-flex justify-content-around">
-                <FormControlLabel
+                {/* <FormControlLabel
                   className="p-4 me-5"
                   control={
                     <Checkbox
@@ -74,10 +74,24 @@ export const Page3 = () => {
                     />
                   }
                   label={<Typography className="fs-3">World</Typography>}
-                />
+                /> */}
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{ width: "10rem" }}>
+                    Exercise 
+                  </p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{ width: "10rem" }}>Smoking</p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{ width: "10rem" }}>Sleep</p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{ width: "10rem" }}>High cholesterol </p>
+                </div>
               </div>
               <div className="d-flex justify-content-around">
-                <FormControlLabel
+                {/* <FormControlLabel
                   className="p-4 me-5"
                   control={
                     <Checkbox
@@ -98,7 +112,19 @@ export const Page3 = () => {
                     />
                   }
                   label={<Typography className="fs-3">World</Typography>}
-                />
+                /> */}
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{ width: "10rem" }}>Alcohol</p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{ width: "10rem" }}>Obesity</p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{ width: "10rem" }}>Obesity</p>
+                </div>
+                <div className="mS-3 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{ width: "10rem" }}>Inactivity</p>
+                </div>
               </div>
             </FormGroup>
           </FormControl>

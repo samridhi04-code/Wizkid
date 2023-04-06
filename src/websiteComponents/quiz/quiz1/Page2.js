@@ -47,13 +47,13 @@ export const Page2 = () => {
         >
           {/* <div className="mb-5 lessonName">Checking the Pulse</div> */}
           <div className="fs-2 mb-5">
-            Where does a doctor work ?{" "}
-           <br/> <span className="fs-5"> (Select multiple) </span>
+            Where does a doctor work ? <br />{" "}
+            <span className="fs-5"> (Select multiple) </span>
           </div>
           <FormControl component="fieldset">
             <FormGroup>
               <div className="d-flex justify-content-around">
-                <FormControlLabel
+                {/* <FormControlLabel
                   className="p-4 me-5"
                   control={
                     <Checkbox
@@ -74,10 +74,22 @@ export const Page2 = () => {
                     />
                   }
                   label={<Typography className="fs-3">Pharmacy</Typography>}
-                />
+                /> */}
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Hospital</p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Pharmacy</p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Clinic</p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Operating theatre </p>
+                </div>
               </div>
               <div className="d-flex justify-content-around">
-                <FormControlLabel
+                {/* <FormControlLabel
                   className="p-4 me-5"
                   control={
                     <Checkbox
@@ -107,7 +119,19 @@ export const Page2 = () => {
                       Blood test laboratory{" "}
                     </Typography>
                   }
-                />
+                /> */}
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Emergency department </p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Blood test laboratory </p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Disaster / War zone </p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Reception</p>
+                </div>
               </div>
             </FormGroup>
           </FormControl>

@@ -47,13 +47,13 @@ export const Page4 = () => {
         >
           {/* <div className="mb-5 lessonName">Checking the Pulse</div> */}
           <div className="fs-2 mb-5">
-            Select the skills a Good Doctor needs to have 
-          <br/>  <span className="fs-5"> (Select multiple) </span>
+            Select the skills a Good Doctor needs to have
+            <br /> <span className="fs-5"> (Select multiple) </span>
           </div>
           <FormControl component="fieldset">
             <FormGroup>
               <div className="d-flex justify-content-around">
-                <FormControlLabel
+                {/* <FormControlLabel
                   className="p-4 me-5"
                   control={
                     <Checkbox
@@ -80,10 +80,22 @@ export const Page4 = () => {
                       Analytical thinking
                     </Typography>
                   }
-                />
+                /> */}
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Clinical skills </p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Organisational skills </p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Leadership </p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Team player </p>
+                </div>
               </div>
               <div className="d-flex justify-content-around">
-                <FormControlLabel
+                {/* <FormControlLabel
                   className="p-4 me-5"
                   control={
                     <Checkbox
@@ -108,7 +120,19 @@ export const Page4 = () => {
                   label={
                     <Typography className="fs-3">All of the above</Typography>
                   }
-                />
+                /> */}
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Lateral thinking </p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Analytical thinking </p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Problem solving </p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3">
+                  <p style={{width:'8rem'}}>Innovation </p>
+                </div>
               </div>
             </FormGroup>
           </FormControl>

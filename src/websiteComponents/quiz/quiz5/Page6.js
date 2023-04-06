@@ -23,18 +23,18 @@ const useStyles = makeStyles((theme) => ({
 export const Page6 = () => {
   const classes = useStyles();
 
-  const [flavors, setFlavors] = React.useState({
-    chocolate: true,
-    vanilla: false,
-    strawberry: false,
-    orange: false,
-  });
+  // const [flavors, setFlavors] = React.useState({
+  //   chocolate: true,
+  //   vanilla: false,
+  //   strawberry: false,
+  //   orange: false,
+  // });
 
-  const { chocolate, vanilla, strawberry, orange } = flavors;
+  // const { chocolate, vanilla, strawberry, orange } = flavors;
 
-  const handleFlavorChange = (event) => {
-    setFlavors({ ...flavors, [event.target.name]: event.target.checked });
-  };
+  // const handleFlavorChange = (event) => {
+  //   setFlavors({ ...flavors, [event.target.name]: event.target.checked });
+  // };
 
   return (
     <>
@@ -53,7 +53,7 @@ export const Page6 = () => {
           <FormControl component="fieldset">
             <FormGroup>
               <div className="d-flex justify-content-around">
-                <FormControlLabel
+                {/* <FormControlLabel
                   className="p-4 me-5"
                   control={
                     <Checkbox
@@ -76,10 +76,18 @@ export const Page6 = () => {
                   label={
                     <Typography className="fs-3">Tricuspid valve</Typography>
                   }
-                />
+                /> */}
+                <div className="mx-4 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{width:'15rem'}}>
+                  Aortic valve </p>
+                </div>
+                <div className="mx-4 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{width:'15rem'}}>
+                  Tricuspid valve </p>
+                </div>
               </div>
               <div className="d-flex justify-content-around">
-                <FormControlLabel
+                {/* <FormControlLabel
                   className="p-4 me-5"
                   control={
                     <Checkbox
@@ -104,7 +112,15 @@ export const Page6 = () => {
                   label={
                     <Typography className="fs-3">Mitral valve </Typography>
                   }
-                />
+                /> */}
+                <div className="mx-4 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{width:'15rem'}}>
+                  Pulmonary valve </p>
+                </div>
+                <div className="mx-4 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{width:'15rem'}}>
+                  Mitral valve </p>
+                </div>
               </div>
             </FormGroup>
           </FormControl>

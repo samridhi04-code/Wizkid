@@ -20,7 +20,7 @@ export const LessonFiveQuiz = () => {
         {/* <h1 className="fw-bold mt-5" style={{color:'magenta '}}>Life of a doctor </h1> */}
         {/* <h2 className="mt-3" style={{color:'#824de5 '}}>Please help us know you you better before we take you to your course</h2> */}
         <TypeFormQuiz5 onSubmit={submit}>
-          <Page1 />
+          {/* <Page1 /> */}
           <Page2 />
           <Page3 />
           <Page4 />

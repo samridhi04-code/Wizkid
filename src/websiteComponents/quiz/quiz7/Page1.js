@@ -23,18 +23,18 @@ const useStyles = makeStyles((theme) => ({
 export const Page1 = () => {
   const classes = useStyles();
 
-  const [flavors, setFlavors] = React.useState({
-    chocolate: true,
-    vanilla: false,
-    strawberry: false,
-    orange: false,
-  });
+  // const [flavors, setFlavors] = React.useState({
+  //   chocolate: true,
+  //   vanilla: false,
+  //   strawberry: false,
+  //   orange: false,
+  // });
 
-  const { chocolate, vanilla, strawberry, orange } = flavors;
+  // const { chocolate, vanilla, strawberry, orange } = flavors;
 
-  const handleFlavorChange = (event) => {
-    setFlavors({ ...flavors, [event.target.name]: event.target.checked });
-  };
+  // const handleFlavorChange = (event) => {
+  //   setFlavors({ ...flavors, [event.target.name]: event.target.checked });
+  // };
 
   return (
     <>
@@ -65,7 +65,7 @@ export const Page1 = () => {
           <FormControl component="fieldset">
             <FormGroup>
               <div className="d-flex justify-content-around">
-                <FormControlLabel
+                {/* <FormControlLabel
                   className="p-4 me-5"
                   control={
                     <Checkbox
@@ -86,10 +86,16 @@ export const Page1 = () => {
                     />
                   }
                   label={<Typography className="fs-3">A, C, B, E, F, D</Typography>}
-                />
+                /> */}
+                  <div className="mx-3 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{ width: "10rem" }}>B, C, F, E, A, D</p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{ width: "10rem" }}>A, C, B, E, F, D</p>
+                </div>
               </div>
               <div className="d-flex justify-content-around">
-                <FormControlLabel
+                {/* <FormControlLabel
                   className="p-4 me-5"
                   control={
                     <Checkbox
@@ -110,7 +116,13 @@ export const Page1 = () => {
                     />
                   }
                   label={<Typography className="fs-3">B, D, C, A, F, E</Typography>}
-                />
+                /> */}
+                 <div className="mx-3 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{ width: "10rem" }}>A, B, C, D, E, F</p>
+                </div>
+                <div className="mx-3 mt-5 bg-primary p-3 rounded-3 fs-5">
+                  <p style={{ width: "10rem" }}>B, D, C, A, F, E </p>
+                </div>
               </div>
             </FormGroup>
           </FormControl>
